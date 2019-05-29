@@ -1,0 +1,146 @@
+.heading{
+
+    &__primary{
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: white;
+
+        &-main{
+            font-size: 11.5rem;
+        
+            @media(max-width: 1500px){
+                font-size: 9.5rem;
+            }
+
+            @media(max-width: 1300px){
+                font-size: 8.5rem;
+            }
+
+            @media(max-width: 650px){
+                font-size: 7.5rem;
+            }
+
+            @media(max-width: 520px){
+                font-size: 6.5rem;
+            }
+
+            @media(max-height: 700px){
+                font-size: 6rem;
+            }
+
+            @media(max-width: 440px){
+                font-size: 5rem;
+            }
+
+            @media(max-height: 420px){
+                font-size: 5rem;
+            }
+
+            @media(max-width: 340px){
+                font-size: 4rem;
+            }
+
+           
+
+            
+
+        }
+
+        &-name{
+            color: $color-yellow;
+        }
+
+        &-sub{
+            font-size: 3.5rem;
+            letter-spacing: 7.8px;
+
+            @media(max-width: 1500px){
+                font-size: 3rem;
+                letter-spacing: 5.7px;
+            }
+
+            @media(max-width: 1300px){
+                font-size: 2.8rem;
+                letter-spacing: 4.3px;
+            }
+
+            @media(max-width: 1200px){
+                letter-spacing: 3.9px;
+            }
+
+            @media(max-width: 900px){
+                font-size: 2.7rem;
+            }
+
+            @media(max-width: 650px){
+                font-size: 2.32rem;
+            }
+
+            @media(max-width: 600px){
+                font-size: 2.23rem;
+            }
+
+            @media(max-width: 520px){
+                font-size: 2.1rem;
+                letter-spacing: 2.5px;
+            }
+
+            @media(max-height: 700px){
+                font-size: 2.03rem;
+                letter-spacing: 2.5px;
+            }
+
+            @media(max-height: 700px) and (max-width: 900px){
+                font-size: 1.94rem;
+            }
+
+            @media(max-height: 700px) and (max-width: 600px){
+                font-size: 1.9rem;
+            }
+
+            @media(max-height: 420px){
+                font-size: 1.8rem;
+                letter-spacing: 1.18px;
+            }
+
+            @media(max-width: 440px){
+                font-size: 1.8rem;
+                letter-spacing: 1.15px;
+            }
+
+            @media(max-width: 340px){
+                font-size: 1.64rem;
+                letter-spacing: normal;
+            }
+
+        }
+
+    }
+
+    &__secondary{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        font-size: 8rem;
+
+        @media(max-width: 400px){
+            font-size: 6rem;
+        }
+
+        &-main{
+            font-size: 8rem;
+
+            @media(max-width: 350px){
+                font-size: 6rem;
+            }
+
+        }
+
+        &-sub{
+            font-size: 1.5rem;
+            color:rgba(0,0,0,0.7);
+        }
+    }
+
+}

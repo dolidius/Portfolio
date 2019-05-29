@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+
+    @media(max-width: 1200px){
+        font-size: 9px;
+    }
+
+    @media(max-width: 900px){
+        font-size: 8px;
+    }
+
+    @media(max-width: 600px){
+        font-size: 7px;
+    }
+
+}
+
+body{
+    font-family: 'K2D';
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+.container{
+
+    &__nav{
+        width: 38rem;
+        position: relative;
+        height: 100vh;
+
+        @media(max-width: 1200px){
+            width: 35rem;
+        }
+
+        @media(max-width: 1050px){
+            width: 0;
+        }
+
+    }
+
+    &__content{
+        width: calc(100% - 38rem);
+
+        @media(max-width: 1200px){
+            width: calc(100% - 35rem);
+        }
+
+        @media(max-width: 1050px){
+            width: 100%;
+        }    
+
+    }
+
+}
