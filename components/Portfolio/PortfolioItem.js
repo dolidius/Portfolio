@@ -44,8 +44,8 @@ class PortfolioItem extends Component{
                     <p className="portfolio__item-desc">{this.props.desc ? this.props.desc : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis ex et perspiciatis iste eum facere ut officia dolores. Sit iste aliquam voluptate repellat molestiae. Impedit nemo harum error, dolores fugiat magni expedita quod, neque, quos sunt voluptates mollitia possimus."}</p>
 
                     <div className="portfolio__tags">
-                        {this.props.tags.map(tag => (
-                            <div className="portfolio__tag">{tag}</div>
+                        {this.props.tags.map((tag, i) => (
+                            <div key={i} className="portfolio__tag">{tag}</div>
                         ))}
                     </div>
 

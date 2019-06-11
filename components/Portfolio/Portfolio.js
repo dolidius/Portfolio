@@ -23,10 +23,10 @@ const Portfolio = () => (
         />
 
         <PortfolioItem
-            title="Mogo"
-            imageName="mogo.png"
-            // liveHref="https://condescending-feynman-2e8df7.netlify.com/"
-            // codeHref="https://github.com/dolidius/Hangman-Game"
+            title="MaguwoHost"
+            imageName="maguwohost.png"
+            liveHref="https://inspiring-tereshkova-44a345.netlify.com/"
+            codeHref="https://github.com/dolidius/Maguwohost"
             tags={["HTML5", "CSS", "SCSS", "PSD to HTML"]}
         />
 
