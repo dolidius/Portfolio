@@ -1,0 +1,87 @@
+.hamb{
+    position: fixed;
+    font-size: 3.8rem;
+    color: black;
+    right: 4rem;
+    top: 2rem;
+    cursor: pointer;
+    display: none;
+    transition: all .5s;
+    width: 8rem;
+    height: 8rem;
+    background: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+
+    @media(max-height: 420px){
+        width: 7rem;
+        height: 7rem;
+    }
+
+    &__icon{
+
+        &-line{
+            width: 3.4rem;
+            height: 4px;
+            background-color: black;
+            display: block;
+            margin: .8rem auto;
+            transition: all 0.3s ease-in-out;
+
+            @media(max-width: 600px){
+                margin: .7rem auto;
+                height: 3px;
+                width: 3.2rem;
+            }
+
+            @media(max-height: 420px){
+                margin: .7rem auto;
+                height: 3px;
+                width: 3.2rem;
+            }
+
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &-open &-line:nth-child(2){
+            opacity: 0;
+        }
+
+        &-open &-line:nth-child(1){
+            transform: translateY(11px) rotate(45deg);
+
+            @media(max-width: 900px){
+                transform: translateY(10px) rotate(45deg);
+            }
+
+            @media(max-width: 600px){
+                transform: translateY(8px) rotate(45deg);
+            }
+
+        }
+
+        &-open &-line:nth-child(3){
+            transform: translateY(-11px) rotate(-45deg);
+
+            @media(max-width: 900px){
+                transform: translateY(-10px) rotate(-45deg);
+            }
+
+            @media(max-width: 600px){
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+        }
+
+    }
+
+    @media(max-width: 1050px){
+        display: flex;
+    }
+
+}

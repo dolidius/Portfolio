@@ -1,0 +1,76 @@
+.baner{
+    width: 100%;
+    padding: 11rem 0;
+    background: linear-gradient(to right, #232526, #414345);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title{
+        color: white;
+        font-size: 9rem;
+        letter-spacing: 10px;
+        font-weight: 100;
+        font-family: 'Montserrat';
+        text-align: center;
+
+        @media(max-width: 1400px){
+            font-size: 8rem;
+            letter-spacing: 5px;
+        }
+
+        @media(max-width: 550px){
+            font-size: 7rem;
+            letter-spacing: 3px;
+        }
+
+        @media(max-width: 450px){
+            font-size: 5rem;
+            letter-spacing: 1px;
+        }
+
+    }
+
+    &__button{
+        color: black;
+        font-family: 'Montserrat';
+        background: white;
+        padding: 2.2rem 17rem;
+        border-radius: 40px;
+        border: none;
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+        transition: all .1s;
+        outline: none;
+
+        @media(max-width: 1400px){
+            padding: 2.2rem 14rem;
+            font-size: 1.7rem;
+        }
+
+        @media(max-width: 550px){
+            padding: 2rem 12rem;
+            font-size: 1.65rem;
+        }
+
+        @media(max-width: 450px){
+            padding: 1.8rem 8rem;
+            font-size: 1.55rem;
+        }
+
+        &:hover{
+            transform: scale(1.035);
+            box-shadow: 0 3rem 6rem rgba(0,0,0,0.35);
+        }
+
+        &:active{
+            transform: scale(1);
+            box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+        }
+
+    }
+
+}

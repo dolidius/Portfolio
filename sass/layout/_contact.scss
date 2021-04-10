@@ -1,0 +1,293 @@
+.contact{
+    padding: 20rem 0 15rem 0;
+    font-family: 'Montserrat';
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6rem;
+        align-items: center;
+
+        &-container{
+            display: flex;
+
+            @media(max-width: 500px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+
+        &-group{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 0;
+        }
+
+        &-field{
+            margin: 0 2.5rem 2.5rem 0;
+            font-family: inherit;
+            background: transparent;
+            border: none;
+            padding: 1.7rem 0;
+            font-size: 2rem;
+            border-bottom: 2px solid #817B7B;
+            outline: none;
+
+            @media(max-width: 500px){
+                margin-right: 0;
+            }
+
+            &::placeholder{
+                color: #817B7B;
+                opacity: 1 !important;
+                filter: none;
+            }
+        }
+
+        &-input{
+            width: 45rem;
+
+            @media(max-width: 1500px){
+                width: 38rem;
+            }
+
+            @media(max-width: 1300px){
+                width: 33rem;
+            }
+
+            @media(max-width: 650px){
+                width: 28rem;
+            }
+
+            @media(max-width: 500px){
+                width: 45rem;
+            }
+
+            @media(max-width: 360px){
+                width: 40rem;
+            }
+
+        }
+
+        &-textarea{
+            resize: none;
+            width: 92.5rem;
+            height: 15rem;
+            line-height: 1.7;
+            font-size: 2.2rem;
+
+            @media(max-width: 1500px){
+                width: 78.5rem;
+            }
+
+            @media(max-width: 1300px){
+                width: 68.5rem;
+            }
+
+            @media(max-width: 650px){
+                width: 58.5rem;
+            }
+
+            @media(max-width: 500px){
+                width: 45rem;
+            }
+
+            @media(max-width: 360px){
+                width: 40rem;
+            }
+
+        }
+
+        &-label{
+            color: $color-dark-gray;
+            font-size: 1.5rem;
+        }
+
+        &-button{
+            background: #CF3535;
+            padding: 1.7rem 9rem;
+            border: none;
+            outline: none;
+            font-family: inherit;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all .15s;
+
+            &:hover{
+                transform: scale(1.04);
+            }
+
+            &:active{
+                transform: scale(1);
+            }
+
+            &-container{
+                align-self: flex-start;
+                margin-left: calc((100% - 95.5rem) / 2);
+
+                @media(max-width: 1500px){
+                    margin-left: calc((100% - 81.5rem) / 2);                    
+                }
+
+                @media(max-width: 1300px){
+                    margin-left: calc((100% - 71.5rem) / 2);                    
+                }
+
+                @media(max-width: 650px){
+                    margin-left: calc((100% - 61.5rem) / 2);                    
+                }
+
+                @media(max-width: 500px){
+                    text-align: center;
+                    margin-left: 0;
+                    align-self: center;                   
+                }
+                
+            }
+
+        }
+
+    }
+
+    &__modal{
+        display: flex;
+        position: fixed;
+        background: rgba(0,0,0,0.8);
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+
+        &-box{
+            width: 50%;
+            background: white;
+            opacity: 0;
+            box-shadow: 0 3rem 6rem rgba(0,0,0,0.2);
+            transition: all .4s .2s;
+            transform: translate(-50%, -50%) scale(.5);
+            padding: 12rem 0 9rem 0;
+            border-radius: 4px;
+            text-align: center;
+
+            @media(max-width: 1600px){
+                width: 60%;
+            }
+
+            @media(max-width: 1150px){
+                width: 65%;
+            }
+
+            @media(max-width: 800px){
+                width: 75%;
+            }
+
+            @media (max-width: 530px) {
+                width: 85%;
+            }
+
+            @media (max-width: 450px) {
+                width: 90%;
+            }
+
+        }
+
+        &-opened{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &-heading{
+            font-size: 5rem;
+
+            @media (max-width: 1060px) {
+                font-size: 4rem;
+            }
+
+            @media (max-width: 700px) {
+                font-size: 3.5rem;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 3rem;
+            }
+
+            @media (max-width: 370px) {
+                font-size: 2.5rem;
+            }
+
+        }
+
+        &-info{
+            margin: 1rem;
+            font-size: 2rem;
+
+            @media (max-width: 450px) {
+                font-size: 1.8rem;
+            }
+
+        }
+
+        &-buttons{
+            margin-top: 1.5rem;
+        }
+
+        &-button{
+            border: none;
+            font-family: 'Karla';
+            font-size: 1.8rem;
+            outline: none;
+            padding: 1.7rem 4.5rem;
+            cursor: pointer;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+            border-radius: 3px;
+            transition: all .15s;
+            background: $color-blue;
+            color: white;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+
+            &:active{
+                transform: scale(1);
+            }
+
+            @media (max-width: 700px) {
+                font-size: 1.6rem;
+                padding: 1.55rem 4rem;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 1.5rem;
+                padding: 1.5rem 3.7rem;
+            }
+
+        }
+
+        &-exit{
+            position: absolute;
+            right: 4rem;
+            top: 2rem;
+            font-size: 4rem;
+            color: #DFDFDF;
+            
+            i{
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+}
